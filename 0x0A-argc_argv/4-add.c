@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - entry point.
+ * @argc: arguments count.
+ * @argv: argument vector.
+ * Return: always 0.
+ */
 
 int main(int argc, char **argv)
 {
