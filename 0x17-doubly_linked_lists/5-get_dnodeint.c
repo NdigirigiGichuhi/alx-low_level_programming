@@ -32,24 +32,18 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	}
 	else
 	{
-		if (len == 1)
-		{
-			num = head;
-		}
-		else
-		{
 
-			while (temp != NULL)
+		while (temp != NULL)
+		{
+			temp = temp->next;
+			count++;
+
+			if (count == index)
 			{
-				temp = temp->next;
-				count++;
-
-				if (count == index)
-				{
-					num = temp;
-				}
+				num = temp;
 			}
 		}
+
 	}
 	return (num);
 }
