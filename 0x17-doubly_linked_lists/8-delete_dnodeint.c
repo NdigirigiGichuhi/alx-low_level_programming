@@ -31,7 +31,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		if (*head != NULL)
 			(*head)->prev = NULL;
 	}
-	else if (index > len)
+	else if (index > len - 1)
 		return (-1);
 	else
 	{
