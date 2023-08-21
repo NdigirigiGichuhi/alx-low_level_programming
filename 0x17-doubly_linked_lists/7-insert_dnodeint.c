@@ -26,7 +26,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		len++;
 	}
 	temp = *h;
-	if (*h == NULL || idx > len - 1 || len == 1)
+	if (*h == NULL || idx > len - 1 || len == 2)
 		return (NULL);
 	while (temp != NULL)
 	{
