@@ -31,7 +31,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		*h = newnode;
 	}
-	else if (idx > len)
+	else if (idx > len - 1)
 	{
 		return (NULL);
 	}
